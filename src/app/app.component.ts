@@ -1,3 +1,6 @@
+//https://angular-maps.com/guides/getting-started/
+
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,18 +10,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Jorge\'s App';
+  lat = 4.607;
+  lng = -74.1024516;
   var2='Jorge Morales';
   var3=19;
   habilitacion=false;
   nombre:string = '';
 
   paises:any = [
-    {nombre: 'Colombia'},
-    {nombre: 'Brasil'},
-    {nombre: 'Argentina'},
-    {nombre: 'Polonia'},
-    {nombre: 'Alemania'},
-    {nombre: 'Francia'},
+    {activo: true, nombre: 'Colombia'},
+    {activo: false, nombre: 'Brasil'},
+    {activo: true, nombre: 'Argentina'},
+    {activo: false, nombre: 'Polonia'},
+    {activo: true, nombre: 'Alemania'},
+    {activo: true, nombre: 'Francia'},
   ]
 
 

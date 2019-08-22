@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,11 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AgmCoreModule.forRoot({
+      //apiKey: 'AIzaSyDni4S3_VDdbd3aViKs32VBlFFpvKtmwgU'
+      apiKey: 'AIzaSyBFjJcSQF4jyIe4PKW9b6SItv-wDoCP2wU'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
