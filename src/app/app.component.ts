@@ -10,15 +10,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SJG App';
-  lat = 4.607;
-  lng = -74.1024516;
+  lat = 4.7529;
+  lng = -74.097;
 
-  paises:any = [
-    {activo: true, nombre: 'Colombia'},
-    {activo: false, nombre: 'Brasil'},
-    {activo: true, nombre: 'Argentina'},
-    {activo: false, nombre: 'Polonia'},
-    {activo: true, nombre: 'Alemania'},
-    {activo: true, nombre: 'Francia'},
+  Countries:any = [
+    {status: true, name: 'Colombia', location:1},
+    {status: false, name: 'Brasil' , location:1},
+    {status: true, name: 'Argentina', location:2},
+    {status: false, name: 'Poland', location:3},
+    {status: true, name: 'Germany', location:3},
+    {status: false, name: 'France', location:3},
   ]
 }

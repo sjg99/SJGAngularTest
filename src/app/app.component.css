@@ -12,3 +12,7 @@ h1{
 agm-map {
     height: 300px;
   }
+
+.even{
+    background-color: #ffe60080;
+}

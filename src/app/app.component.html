@@ -6,11 +6,13 @@
   <br>
   <div>
     <ul>
-      <li *ngFor="let pais of paises">{{pais.nombre}}</li>    
-    </ul>
-    <ul>
-      <ng-container *ngFor="let pais of paises">
-        <li *ngIf="pais.activo">{{pais.nombre}}</li>
+      <ng-container *ngFor="let Country of Countries; let i = index" [ngSwitch]="Country.location">
+        <li [ngStyle]="{color: (Country.status) ? '#52af5f':'#ff0053'}" [ngClass]="{even: (i+1)%3==0}">
+          {{Country.name}}-
+          <span *ngSwitchCase=1>Very Close</span>
+          <span *ngSwitchCase=2>Close</span>
+          <span *ngSwitchCase=3>Really Far</span>
+        </li>
       </ng-container>
     </ul>
   </div>
